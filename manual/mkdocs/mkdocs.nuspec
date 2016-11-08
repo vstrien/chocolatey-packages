@@ -8,7 +8,7 @@
      <owners>BBT Software AG</owners>
      <projectUrl>http://www.mkdocs.org</projectUrl>
      <projectSourceUrl>https://github.com/mkdocs/mkdocs/</projectSourceUrl>
-     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/mkdocs</packageSourceUrl>
+     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/manual/mkdocs</packageSourceUrl>
      <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/MkDocs.png</iconUrl>
      <licenseUrl>https://github.com/mkdocs/mkdocs/blob/master/LICENSE</licenseUrl>
      <docsUrl>http://www.mkdocs.org</docsUrl>
@@ -16,7 +16,7 @@
      <requireLicenseAcceptance>false</requireLicenseAcceptance>
      <summary>Project documentation with Markdown.</summary>
      <description>MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. Documentation source files are written in Markdown, and configured with a single YAML configuration file.</description>
-     <tags>MkDocs</tags>
+     <tags>MkDocs Markdown Documentation</tags>
      <releaseNotes>http://www.mkdocs.org/about/release-notes/</releaseNotes>
      <dependencies>
         <dependency id="Python" version="2.6" />
