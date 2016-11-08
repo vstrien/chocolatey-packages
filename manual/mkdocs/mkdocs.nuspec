@@ -8,7 +8,7 @@
      <owners>BBT Software AG</owners>
      <projectUrl>http://www.mkdocs.org</projectUrl>
      <projectSourceUrl>https://github.com/mkdocs/mkdocs/</projectSourceUrl>
-     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/mkdocs</packageSourceUrl>
+     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/manual/mkdocs</packageSourceUrl>
      <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/MkDocs.png</iconUrl>
      <licenseUrl>https://github.com/mkdocs/mkdocs/blob/master/LICENSE</licenseUrl>
      <docsUrl>http://www.mkdocs.org</docsUrl>
