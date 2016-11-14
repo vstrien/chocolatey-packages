@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-cake</id>
+    <title>Visual Studio Code Cake Extension</title>
+    <version>1.0.0</version>
+    <authors>Cake Build</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode</projectUrl>
+    <projectSourceUrl>https://github.com/cake-build/cake-vscode</projectSourceUrl>
+    <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/manual/vscode-cake</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/vscode-cake.png</iconUrl>
+    <docsUrl>https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode</docsUrl>
+    <bugTrackerUrl>https://github.com/cake-build/cake-vscode/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Cake build script language support.</summary>
+    <description>This addin brings language support for Cake build scripts to Visual Studio Code.</description>
+    <tags>Microsoft VisualStudioCode vscode Cake Extension</tags>
+    <releaseNotes>https://github.com/cake-build/cake-vscode/releases</releaseNotes>
+    <dependencies>
+      <dependency id="VisualStudioCode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+</package>
