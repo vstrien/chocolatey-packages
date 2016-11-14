@@ -16,7 +16,7 @@ environment:
   au_push: true
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: BBTSoftwareAG/chocolatey-packages
   github_api_key:
     secure: rA/+doGELuSP0zQ9pEWG5zunTSzzXT8Z5mx1npaBVyXBDUt9bpAS6UQmHO18zX2W #https://ci.appveyor.com/tools/encrypt
 
@@ -32,7 +32,7 @@ environment:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id: https://gist.github.com/bbtsoftware/b601bc1e0835054f4df23310100983ee
+  gist_id: b601bc1e0835054f4df23310100983ee
 
   # Chocolatey API key - to push updated packages
   api_key:
