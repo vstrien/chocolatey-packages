@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-markdownlint</id>
+    <title>Visual Studio Code Markdownlint Extension</title>
+    <version>1.0.0</version>
+    <authors>David Anson</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint</projectUrl>
+    <projectSourceUrl>https://github.com/DavidAnson/vscode-markdownlint</projectSourceUrl>
+    <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/manual/vscode-markdownlint</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/vscode-markdownlint.png</iconUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <docsUrl>https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint</docsUrl>
+    <bugTrackerUrl>https://github.com/DavidAnson/vscode-markdownlint/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Markdown linting and style checking for Visual Studio Code</summary>
+    <description>markdownlint is a Visual Studio Code extension that includes a library of rules to encourage standards and consistency for Markdown files. It is powered by markdownlint for Node.js which is based on markdownlint for Ruby.</description>
+    <tags>Microsoft VisualStudioCode vscode markdown markdownlint Extension</tags>
+    <releaseNotes>https://github.com/DavidAnson/vscode-markdownlint/blob/master/CHANGELOG.md</releaseNotes>
+    <dependencies>
+      <dependency id="VisualStudioCode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+</package>
