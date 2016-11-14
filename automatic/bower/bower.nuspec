@@ -10,7 +10,7 @@
     <projectUrl>http://bower.io/</projectUrl>
     <projectSourceUrl>https://github.com/bower/bower/</projectSourceUrl>
     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/automatic/bower</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/bower.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/Bower.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <docsUrl>https://bower.io/</docsUrl>
     <bugTrackerUrl>https://github.com/bower/bower/issues</bugTrackerUrl>
