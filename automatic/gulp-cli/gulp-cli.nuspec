@@ -23,4 +23,7 @@
       <dependency id="nodejs.install" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
