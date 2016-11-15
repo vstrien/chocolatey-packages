@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>mkdocs-material</id>
+    <title>MkDocs Material Theme</title>
+    <version>0.0.0</version>
+    <authors>Martin Donath</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>http://squidfunk.github.io/mkdocs-material/</projectUrl>
+    <projectSourceUrl>https://github.com/squidfunk/mkdocs-material</projectSourceUrl>
+    <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/automatic/mkdocs-material</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/MkDocsMaterial.png</iconUrl>
+    <licenseUrl>http://squidfunk.github.io/mkdocs-material/license/</licenseUrl>
+    <docsUrl>http://squidfunk.github.io/mkdocs-material/</docsUrl>
+    <bugTrackerUrl>https://github.com/squidfunk/mkdocs-material/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>A material design theme for MkDocs.</summary>
+    <description>Material is a theme for MkDocs, an excellent static site generator geared towards project documentation. It is built using Google's material design guidelines, full responsive, optimized for touch and pointer devices as well as all sorts of screen sizes.</description>
+    <tags>MkDocs Markdown Documentation Material</tags>
+    <releaseNotes>https://github.com/squidfunk/mkdocs-material/blob/master/CHANGELOG</releaseNotes>
+    <dependencies>
+      <dependency id="MkDocs" version="0.15.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
