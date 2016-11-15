@@ -36,10 +36,10 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: NBStnaE0XMa51x4JrQc9Witu99VSS7WHPE0NkYums1X5XCGx1Tlavz7xAMWRcM+P # https://ci.appveyor.com/tools/encrypt
+    secure: r97WGsbx+ZZIy5a3xjmoFXBXXcz1bT6aV/rujvdEy2fO9HieTGsA/pAtpqSBnzrj # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "pascal.berger@bbtsoftware.ch"
+- git config --global user.email "devadmin@bbtsoftware.ch"
 - git config --global user.name "BBT Software AG"
 - git config --global core.safecrlf false
 
