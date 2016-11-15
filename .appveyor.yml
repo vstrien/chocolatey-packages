@@ -18,7 +18,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: BBTSoftwareAG/chocolatey-packages
   github_api_key:
-    secure: rA/+doGELuSP0zQ9pEWG5zunTSzzXT8Z5mx1npaBVyXBDUt9bpAS6UQmHO18zX2W #https://ci.appveyor.com/tools/encrypt
+    secure: r97WGsbx+ZZIy5a3xjmoFXBXXcz1bT6aV/rujvdEy2fO9HieTGsA/pAtpqSBnzrj #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
