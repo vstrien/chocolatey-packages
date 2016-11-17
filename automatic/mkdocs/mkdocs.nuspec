@@ -10,7 +10,7 @@
     <projectUrl>http://www.mkdocs.org</projectUrl>
     <projectSourceUrl>https://github.com/mkdocs/mkdocs/</projectSourceUrl>
     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/automatic/mkdocs</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/MkDocs.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/6b99e941a304b78c4406e610a34a31503d5aff28/icons/MkDocs.png</iconUrl>
     <licenseUrl>https://github.com/mkdocs/mkdocs/blob/master/LICENSE</licenseUrl>
     <docsUrl>http://www.mkdocs.org</docsUrl>
     <bugTrackerUrl>https://github.com/mkdocs/mkdocs/issues</bugTrackerUrl>

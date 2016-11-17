@@ -9,7 +9,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode</projectUrl>
     <projectSourceUrl>https://github.com/cake-build/cake-vscode</projectSourceUrl>
     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/manual/vscode-cake</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/vscode-cake.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/19e7388f56f2faf2e2b7a270984d51e93ff8a1cb/icons/vscode-cake.png</iconUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode</docsUrl>
     <bugTrackerUrl>https://github.com/cake-build/cake-vscode/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
