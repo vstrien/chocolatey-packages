@@ -9,7 +9,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-eslint</projectSourceUrl>
     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/manual/vscode-eslint</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/vscode-eslint.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/d8c9bacbea3fd9ad9824780608620b218b47e683/icons/vscode-eslint.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-eslint/issues</bugTrackerUrl>

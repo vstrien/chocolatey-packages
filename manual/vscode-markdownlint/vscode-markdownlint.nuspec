@@ -9,7 +9,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint</projectUrl>
     <projectSourceUrl>https://github.com/DavidAnson/vscode-markdownlint</projectSourceUrl>
     <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/manual/vscode-markdownlint</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/vscode-markdownlint.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/4a055e434da1035a66c821c68869de8ea06bdd2f/icons/vscode-markdownlint.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint</docsUrl>
     <bugTrackerUrl>https://github.com/DavidAnson/vscode-markdownlint/issues</bugTrackerUrl>
