@@ -16,7 +16,7 @@ environment:
   au_push: true
 
   # Github token to commit pushed packages to repository
-  github_user_repo: BBTSoftwareAG/chocolatey-packages
+  github_user_repo: bbtsoftware/chocolatey-packages
   github_api_key:
     secure: r97WGsbx+ZZIy5a3xjmoFXBXXcz1bT6aV/rujvdEy2fO9HieTGsA/pAtpqSBnzrj #https://ci.appveyor.com/tools/encrypt
 
@@ -36,7 +36,7 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: r97WGsbx+ZZIy5a3xjmoFXBXXcz1bT6aV/rujvdEy2fO9HieTGsA/pAtpqSBnzrj # https://ci.appveyor.com/tools/encrypt
+    secure: NBStnaE0XMa51x4JrQc9Witu99VSS7WHPE0NkYums1X5XCGx1Tlavz7xAMWRcM+P # https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "devadmin@bbtsoftware.ch"
