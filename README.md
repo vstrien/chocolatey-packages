@@ -4,7 +4,7 @@ Chocolatey packages maintained by [BBT Software AG](http://www.bbtsoftware.ch).
 
 [![Build status](https://ci.appveyor.com/api/projects/status/a31t23xs5lycw79h/branch/master?svg=true)](https://ci.appveyor.com/project/BBTSoftwareAG/chocolatey-packages/branch/master)
 
-[Update status](https://gist.github.com/bbtsoftware/b601bc1e0835054f4df23310100983ee)
+[Update status](https://gist.github.com/bbt-bot/b601bc1e0835054f4df23310100983ee)
 
 ## Folder Structure
 
