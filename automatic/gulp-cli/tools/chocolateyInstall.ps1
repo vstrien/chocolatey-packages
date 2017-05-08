@@ -1,5 +1,5 @@
-Update-SessionEnvironment
+﻿Update-SessionEnvironment
 
-$version = '1.2.2'
+$version = '1.3.0'
 
 npm install -g gulp-cli@$version
