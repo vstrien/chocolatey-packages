@@ -9,8 +9,8 @@
     <owners>BBT Software AG</owners>
     <projectUrl>http://bower.io/</projectUrl>
     <projectSourceUrl>https://github.com/bower/bower/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/automatic/bower</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/9895f43909b7d6ff6978eda40e30e03fdcf84e29/icons/Bower.png</iconUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/bower</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/9895f43909b7d6ff6978eda40e30e03fdcf84e29/icons/Bower.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <docsUrl>https://bower.io/</docsUrl>
     <bugTrackerUrl>https://github.com/bower/bower/issues</bugTrackerUrl>
