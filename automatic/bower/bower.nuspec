@@ -20,7 +20,7 @@
     <releaseNotes>See https://github.com/bower/bower/blob/master/CHANGELOG.md</releaseNotes>
     <tags>nodejs node npm javascript web packages bower</tags>
     <dependencies>
-      <dependency id="nodejs.install" />
+      <dependency id="nodejs" />
     </dependencies>
   </metadata>
   <files>
