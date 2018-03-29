@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>markdownlint-cli</id>
+    <title>MarkdownLint Command Line Interface</title>
+    <version>0.0</version>
+    <authors>Igor Shubovych</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://github.com/igorshubovych/markdownlint-cli</projectUrl>
+    <projectSourceUrl>https://github.com/igorshubovych/markdownlint-cli</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/markdownlint-cli</packageSourceUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <docsUrl>https://github.com/igorshubovych/markdownlint-cli/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/igorshubovych/markdownlint-cli/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>MarkdownLint command line interface</summary>
+    <description>A command line interface for MarkdownLint.</description>
+    <releaseNotes>See https://github.com/igorshubovych/markdownlint-cli/releases</releaseNotes>
+    <tags>nodejs node markdown linting markdownlint</tags>
+    <dependencies>
+      <dependency id="nodejs" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
