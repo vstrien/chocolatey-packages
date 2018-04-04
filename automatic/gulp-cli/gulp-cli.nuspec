@@ -20,7 +20,7 @@
     <releaseNotes>See https://github.com/gulpjs/gulp-cli/blob/master/CHANGELOG.md</releaseNotes>
     <tags>nodejs node javascript web build gulp</tags>
     <dependencies>
-      <dependency id="nodejs" />
+      <dependency id="nodejs" version="0.10.0" />
     </dependencies>
   </metadata>
   <files>
