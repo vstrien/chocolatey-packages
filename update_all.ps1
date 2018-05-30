@@ -96,7 +96,7 @@ $Options = [ordered]@{
     BeforeEach = {
         param($PackageName, $Options )
         $Options.ModulePaths | % { Import-Module $_ }
-        . $Options.UpdateIconScript $PackageName.ToLowerInvariant() -Quiet -ThrowErrorOnIconNotFound
+        . $Options.UpdateIconScript $PackageName.ToLowerInvariant() -Quiet
         if (Test-Path tools) { Expand-Aliases -Directory tools }
 
         $pattern = "^${PackageName}(?:\\(?<stream>[^:]+))?(?:\:(?<version>.+))?$"
