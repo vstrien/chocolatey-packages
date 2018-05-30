@@ -93,7 +93,7 @@
 param(
   [string]$Name,
   [string]$IconName = $null,
-  [string]$GithubRepository = "chocolatey/bbtsoftware/chocolatey-packages",
+  [string]$GithubRepository = "bbtsoftware/chocolatey-packages",
   [string]$RelativeIconDir = "../icons",
   [string]$PackagesDirectory = "../automatic",
   [switch]$UseStopwatch,
