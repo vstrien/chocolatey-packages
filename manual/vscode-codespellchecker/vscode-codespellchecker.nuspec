@@ -31,4 +31,7 @@ The goal of this spell checker is to help with catching common spelling errors w
       <dependency id="vscode" version="1.2.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
