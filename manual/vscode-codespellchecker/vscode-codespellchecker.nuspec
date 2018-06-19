@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-codespellchecker</id>
+    <title>Visual Studio Code Code Spell Checker Extension</title>
+    <version>1.0.0</version>
+    <authors>Street Side Software</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker</projectUrl>
+    <projectSourceUrl>https://github.com/Jason-Rev/vscode-spell-checker</projectSourceUrl>
+    <packageSourceUrl>hhttps://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/vscode-codespellchecker</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/c9a4773e0e332936f0b227eb9880bfcafbb1a2a7/icons/vscode-codespellchecker.png</iconUrl>
+    <licenseUrl>hhttps://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/license</licenseUrl>
+    <docsUrl>https://github.com/Jason-Rev/vscode-spell-checker/blob/master/client/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/Jason-Rev/vscode-spell-checker/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Code Code Spell Checker Extension</summary>
+    <description>
+A basic spell checker that works well with camelCase code.
+
+The goal of this spell checker is to help with catching common spelling errors while keeping the number of false positives low.
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
+</description>
+    <tags>Microsoft VisualStudioCode vscode spell checker Extension</tags>
+    <releaseNotes>https://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="vscode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+</package>
