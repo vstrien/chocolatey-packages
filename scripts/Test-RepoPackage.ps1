@@ -372,14 +372,16 @@ function RunChocoProcess() {
 
   $packageName = $arguments[1] -split ' ' | Select-Object -first 1
   $pkgDir = Get-ChildItem -Path "$PSScriptRoot\.." -Filter "$packageName" -Recurse -Directory | Select-Object -first 1
-  $nupkgFile = Get-ChildItem -Path $pkgDir.FullName -Filter "*.nupkg" | Select-Object -first 1
-  $pkgNameVersion = Split-Path -Leaf $nupkgFile | ForEach-Object { ($_ -replace '((\.\d+)+(-[^-\.]+)?).nupkg', ':$1').Replace(':.', ':') -split ':' }
-  $packageName = $pkgNameVersion | Select-Object -first 1
-  $version     = $pkgNameVersion | Select-Object -last 1
-  if ($packageName -ne $arguments[1]) { $args[1] = $packageName }
 
   try {
     RunChocoPackProcess '' | WriteChocoOutput
+
+    $nupkgFile = Get-ChildItem -Path $pkgDir.FullName -Filter "*.nupkg" | Select-Object -first 1
+    $pkgNameVersion = Split-Path -Leaf $nupkgFile | ForEach-Object { ($_ -replace '((\.\d+)+(-[^-\.]+)?).nupkg', ':$1').Replace(':.', ':') -split ':' }
+    $packageName = $pkgNameVersion | Select-Object -first 1
+    $version     = $pkgNameVersion | Select-Object -last 1
+    if ($packageName -ne $arguments[1]) { $args[1] = $packageName }
+  
     if ($arguments[0] -eq 'install') {
       if ($version) {
         $args += @("--version=$($version)")
