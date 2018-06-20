@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vscode-codespellchecker-german</id>
-    <title>Visual Studio Code Code Spell Checker Extension</title>
+    <title>Visual Studio Code German Code Spell Checker Extension</title>
     <version>1.0.0</version>
     <authors>Street Side Software</authors>
     <owners>BBT Software AG</owners>
