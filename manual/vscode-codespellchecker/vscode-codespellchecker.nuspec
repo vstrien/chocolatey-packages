@@ -25,7 +25,7 @@ The goal of this spell checker is to help with catching common spelling errors w
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
 </description>
-    <tags>Microsoft VisualStudioCode vscode spell checker Extension</tags>
+    <tags>microsoft visualstudiocode vscode extension spell-checker</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/changelog</releaseNotes>
     <dependencies>
       <dependency id="vscode" version="1.2.0" />
