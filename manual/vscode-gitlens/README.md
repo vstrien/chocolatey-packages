@@ -1,21 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata>
-    <id>vscode-gitlens</id>
-    <title>Visual Studio Git Lens Extension</title>
-    <version>1.0.0.20180620</version>
-    <authors>Eric Amodio</authors>
-    <owners>BBT Software AG</owners>
-    <projectUrl>https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens</projectUrl>
-    <projectSourceUrl>https://github.com/eamodio/vscode-gitlens.git</projectSourceUrl>
-    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/vscode-gitlens</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/d2504b05cd9acc53d93c382c1727985004da4141/icons/vscode-gitlens.png</iconUrl>
-    <licenseUrl>https://marketplace.visualstudio.com/items/eamodio.gitlens/license</licenseUrl>
-    <docsUrl>https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens</docsUrl>
-    <bugTrackerUrl>https://github.com/eamodio/vscode-gitlens/issues</bugTrackerUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Git blame annotations, code lens, and more.</summary>
-    <description>
+# <img src="https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/d2504b05cd9acc53d93c382c1727985004da4141/icons/vscode-gitlens.png" width="48" height="48"/> [vscode-gitlens](https://chocolatey.org/packages/vscode-gitlens)
+
 Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more
 
 [GitLens](http://gitlens.amod.io "Learn more about GitLens") is an [open-source](https://github.com/eamodio/vscode-gitlens "Open GitLens on GitHub") extension for [Visual Studio Code](https://code.visualstudio.com) created by [Eric Amodio](http://www.amod.io "Learn more about Eric").
@@ -44,14 +28,3 @@ Here are just some of the features that GitLens provides,
 
 * The package always installs the latest version of the extension.
   The version of the Chocolatey package reflects not the version of the extension.
-</description>
-    <tags>microsoft visualstudiocode vscode extension git</tags>
-    <releaseNotes>https://marketplace.visualstudio.com/items/eamodio.gitlens/changelog</releaseNotes>
-    <dependencies>
-      <dependency id="vscode" version="1.2.0" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

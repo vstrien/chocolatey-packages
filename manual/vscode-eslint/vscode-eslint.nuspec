@@ -3,23 +3,44 @@
   <metadata>
     <id>vscode-eslint</id>
     <title>Visual Studio Code ESLint Extension</title>
-    <version>1.0.0</version>
+    <version>1.0.0.20180620</version>
     <authors>Dirk Baeumer</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint</projectUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-eslint</projectSourceUrl>
-    <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/manual/vscode-eslint</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/d8c9bacbea3fd9ad9824780608620b218b47e683/icons/vscode-eslint.png</iconUrl>
-    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/vscode-eslint</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/d8c9bacbea3fd9ad9824780608620b218b47e683/icons/vscode-eslint.png</iconUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/dbaeumer.vscode-eslint/license</licenseUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint</docsUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vscode-eslint/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Visual Studio Code ESLint Extension</summary>
-    <description>Integrates ESLint into VS Code.</description>
-    <tags>Microsoft VisualStudioCode vscode ESLint Extension</tags>
-    <releaseNotes>https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint</releaseNotes>
+    <description>
+Integrates ESLint JavaScript into VS Code.
+
+Integrates [ESLint](http://eslint.org/) into VS Code. If you are new to ESLint check the [documentation](http://eslint.org/).
+
+The extension uses the ESLint library installed in the opened workspace folder.
+If the folder doesn't provide one the extension looks for a global install version.
+If you haven't installed ESLint either locally or globally do so by running `npm install eslint` in the workspace folder for a local install or `npm install -g eslint` for a global install.
+
+On new folders you might also need to create a `.eslintrc` configuration file.
+You can do this by either using the VS Code command `Create ESLint` configuration or by running the eslint command in a terminal.
+If you have installed eslint globally (see above) then run [eslint --init](http://eslint.org/docs/user-guide/command-line-interface) in a terminal.
+If you have installed eslint locally then run [.\node_modules\.bin\eslint --init](http://eslint.org/docs/user-guide/command-line-interface) under Windows and [./node_modules/.bin/eslint --init](http://eslint.org/docs/user-guide/command-line-interface) under Linux and Mac.
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
+</description>
+    <tags>microsoft visualstudiocode vscode extension eslint</tags>
+    <releaseNotes>https://marketplace.visualstudio.com/items/dbaeumer.vscode-eslint/changelog</releaseNotes>
     <dependencies>
-      <dependency id="VisualStudioCode" version="1.2.0" />
+      <dependency id="vscode" version="1.2.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
