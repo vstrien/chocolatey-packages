@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-codespellchecker-german</id>
+    <title>Visual Studio Code Code Spell Checker Extension</title>
+    <version>1.0.0</version>
+    <authors>Street Side Software</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-german</projectUrl>
+    <projectSourceUrl>https://github.com/Jason3S/vscode-cspell-dict-extensions</projectSourceUrl>
+    <packageSourceUrl>hhttps://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/vscode-codespellchecker-german</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/549e229bcc6827f28fbc9f18fbd3b9ff3db607d7/icons/vscode-codespellchecker-german.png</iconUrl>
+    <licenseUrl>hhttps://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/license</licenseUrl>
+    <docsUrl>https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-german</docsUrl>
+    <bugTrackerUrl>https://github.com/Jason3S/vscode-cspell-dict-extensions/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Code German Code Spell Checker Extension</summary>
+    <description>
+German dictionary extension for VS Code.
+
+Imports the German spell checking dictionary for [Code Spell Checker](https://chocolatey.org/packages/vscode-codespellchecker).
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
+</description>
+    <tags>microsoft visualstudiocode vscode extension spell-checker german</tags>
+    <releaseNotes>https://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker-german/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="vscode" version="1.2.0" />
+      <dependency id="vscode-codespellchecker" version="1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
