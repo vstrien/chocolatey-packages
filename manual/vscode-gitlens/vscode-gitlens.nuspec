@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vscode-gitlens</id>
-    <title>Visual Studio Git Lens Extension</title>
+    <title>Visual Studio Code Git Lens Extension</title>
     <version>1.0.0.20180620</version>
     <authors>Eric Amodio</authors>
     <owners>BBT Software AG</owners>
