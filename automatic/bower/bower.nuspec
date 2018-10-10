@@ -16,12 +16,16 @@
     <bugTrackerUrl>https://github.com/bower/bower/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A package manager for the web</summary>
-    <description>Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.</description>
+    <description>
+Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.
+      
+## Notes
+
+This package requires Node.js.
+You can install either the [nodejs](https://chocolatey.org/packages/nodejs) or [nodejs-lts](https://chocolatey.org/packages/nodejs-lts) package
+    </description>
     <releaseNotes>See https://github.com/bower/bower/blob/master/CHANGELOG.md</releaseNotes>
     <tags>nodejs node npm javascript web packages bower</tags>
-    <dependencies>
-      <dependency id="nodejs" version="0.10.0" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
