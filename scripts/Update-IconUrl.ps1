@@ -163,18 +163,18 @@ function Optimize-Image {
   $extension = [System.IO.Path]::GetExtension($iconPath)
   $fileName  = [System.IO.Path]::GetFileName($iconPath)
 
-  $supportedOptimizers | Where-Object {
+  $supportedOptimizers | ? {
     $name = if ($_.ExeName) { $_.ExeName } else { $_.DisplayName }
     return $_.Extensions.Contains($extension) -and (Get-Command $name -ea 0)
-  } | ForEach-Object {
+  } | % {
     Write-Host "Optimizing the icon $fileName using $($_.DisplayName)"
-    $originalSize = Get-Item $iconPath | ForEach-Object Length
+    $originalSize = Get-Item $iconPath | % Length
     $name = if ($_.ExeName) { $_.ExeName } else { $_.DisplayName }
     $path = Get-Command $name
     do {
-      $sizeBefore = Get-Item $iconPath | ForEach-Object Length
+      $sizeBefore = Get-Item $iconPath | % Length
       Start-Process -FilePath $path -ArgumentList $_.Arguments -Wait -NoNewWindow
-      $sizeAfter = Get-Item $iconPath | ForEach-Object Length
+      $sizeAfter = Get-Item $iconPath | % Length
     } while ($sizeAfter -lt $sizeBefore)
 
     if ($sizeAfter -lt $originalSize) {
@@ -236,7 +236,7 @@ function Replace-IconUrl{
     [string]$GithubRepository
   )
 
-  $nuspec = Get-Content "$NuspecPath" -Encoding UTF8
+  $nuspec = gc "$NuspecPath" -Encoding UTF8
 
   $oldContent = ($nuspec | Out-String) -replace '\r\n?',"`n"
 
@@ -270,23 +270,23 @@ function Update-IconUrl{
 
   $validSuffixes = @(".install"; ".portable"; ".commandline")
 
-  $suffixMatch = $validSuffixes | Where-Object { $Name.EndsWith($_) } | Select-Object -first 1
+  $suffixMatch = $validSuffixes | ? { $Name.EndsWith($_) } | select -first 1
 
   if ($suffixMatch) {
     $possibleNames += $Name.Substring(0, $Name.Length - $suffixMatch.Length)
   }
 
   # Let check if the package already contains a url, and get the filename from that
-  $content = Get-Content "$PSScriptRoot/$PackagesDirectory/$Name/$Name.nuspec" -Encoding UTF8
+  $content = gc "$PSScriptRoot/$PackagesDirectory/$Name/$Name.nuspec" -Encoding UTF8
 
-  if ($content | Where-Object { $_ -match 'Icon(Url)?:\s*Skip( check)?' }) {
+  if ($content | ? { $_ -match 'Icon(Url)?:\s*Skip( check)?' }) {
     if (!($Quiet)) {
       Write-Warning "Skipping icon check for $Name"
     }
     return;
   }
 
-  $content | Where-Object { $_ -match "\<iconUrl\>(.+)\<\/iconUrl\>" } | Out-Null
+  $content | ? { $_ -match "\<iconUrl\>(.+)\<\/iconUrl\>" } | Out-Null
   if ($Matches) {
     $url = $Matches[1]
     $index = $url.LastIndexOf('/')

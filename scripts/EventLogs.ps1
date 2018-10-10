@@ -5,7 +5,7 @@
     Clear all event logs
 #>
 function Clear-EventLogs {
-    Get-EventLog * | ForEach-Object { Clear-EventLog $_.Log }
+    Get-EventLog * | % { Clear-EventLog $_.Log }
 
     #Clear this one again as it accumulates clearing events from previous step
     Clear-EventLog System
@@ -30,16 +30,16 @@ function Get-EventLogs{
     $r = @()
 
     if ($EntryType -eq '*') { $EntryType = 'Error', 'Information', 'Warning' }
-    Get-EventLog * | ForEach-Object Log | ForEach-Object {
+    Get-EventLog * | % Log | % {
         $log = $_
         try {
             $r += Get-EventLog -Log $log -Newest $Newest -EntryType $EntryType -ea 0
         }
         catch { Write-Warning "$log - $_" }
     }
-    $r = $r | Sort-Object TimeWritten -Descending 
-    if ($Raw) {$r} else { $r | Select-Object Source, TimeWritten, Message }
+    $r = $r | sort TimeWritten -Descending 
+    if ($Raw) {$r} else { $r | select Source, TimeWritten, Message }
 }
 
-Set-Alias logs Get-EventLogs
-Set-Alias clearlogs Clear-EventLogs
+sal logs Get-EventLogs
+sal clearlogs Clear-EventLogs

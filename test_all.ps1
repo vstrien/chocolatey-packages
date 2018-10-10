@@ -13,7 +13,7 @@ if (($Name.Length -gt 0) -and ($Name[0] -match '^random (.+)')) {
     Write-Host "TESTING GROUP $($n+1) of $group"
 
     $group_size = [int]($lsau.Count / $group) + 1
-    $Name = $lsau | Select-Object -First $group_size -Skip ($group_size*$n) | ForEach-Object { $_.Name }
+    $Name = $lsau | select -First $group_size -Skip ($group_size*$n) | % { $_.Name }
 
     Write-Host ($Name -join ' ')
     Write-Host ('-'*80)
@@ -70,7 +70,7 @@ $options = [ordered]@{
 
     BeforeEach  = {
       param($PackageName, $Options )
-      $Options.ModulePaths | ForEach-Object { Import-Module $_ }
+      $Options.ModulePaths | % { Import-Module $_ }
   }
 }
 
@@ -81,7 +81,7 @@ $options = [ordered]@{
 
 $global:info = updateall -Name $Name -Options $Options
 
-$au_errors = $global:info | Where-Object { $_.Error } | Select-Object -ExpandProperty Error
+$au_errors = $global:info | ? { $_.Error } | select -ExpandProperty Error
 
 if ($ThrowOnErrors -and $au_errors.Count -gt 0) {
     throw 'Errors during update'
