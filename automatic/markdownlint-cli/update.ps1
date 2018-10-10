@@ -3,9 +3,12 @@ import-module au
 $releases = 'https://github.com/igorshubovych/markdownlint-cli/releases'
 
 function global:au_SearchReplace {
+    $version = [Version]$Latest.Version
+    $packageVersion = [string]$version.Major + "." + $version.Minor + "." + $version.Build
+
     @{
         'tools\ChocolateyInstall.ps1' = @{
-            "(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
+            "(^[$]version\s*=\s*)('.*')" = "`$1'$($packageVersion)'"
         }
      }
 }
