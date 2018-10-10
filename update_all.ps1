@@ -71,6 +71,10 @@ $Options = [ordered]@{
       ReleaseType = 'package'
     }
 
+    Gitter = @{
+      WebHookUrl = $env:gitter_webhook
+    }
+
     RunInfo = @{
         Exclude = 'password', 'apikey', 'apitoken'          #Option keys which contain those words will be removed
         Path    = "$PSScriptRoot\update_info.xml"           #Path where to save the run info
@@ -96,7 +100,7 @@ $Options = [ordered]@{
     BeforeEach = {
         param($PackageName, $Options )
         $Options.ModulePaths | % { Import-Module $_ }
-        . $Options.UpdateIconScript $PackageName.ToLowerInvariant() -Quiet
+        . $Options.UpdateIconScript $PackageName.ToLowerInvariant() -Quiet -ThrowErrorOnIconNotFound
         if (Test-Path tools) { Expand-Aliases -Directory tools }
 
         $pattern = "^${PackageName}(?:\\(?<stream>[^:]+))?(?:\:(?<version>.+))?$"
