@@ -3,12 +3,12 @@
   <metadata>
     <id>dotnet4.6.2-deu</id>
     <title>Microsoft .NET Framework 4.6.2 German Language Pack</title>
-    <version>4.6.1590.0</version>
+    <version>4.6.1590.20181011</version>
     <authors>Microsoft</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://www.microsoft.com/de-DE/download/details.aspx?id=53323</projectUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/dotnet4.6.2-deu</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/eca9d801fec67aa11df1af98be470d9ab601c5cf/icons/dotnet.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@eca9d801fec67aa11df1af98be470d9ab601c5cf/icons/dotnet.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>The .NET Framework 4.6.2 Language Pack contains localized resources for supported languages.</summary>
     <description>

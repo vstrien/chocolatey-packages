@@ -3,13 +3,13 @@
   <metadata>
     <id>vscode-gitlens</id>
     <title>Visual Studio Code Git Lens Extension</title>
-    <version>1.0.0.20180620</version>
+    <version>1.0.0.20181011</version>
     <authors>Eric Amodio</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens</projectUrl>
     <projectSourceUrl>https://github.com/eamodio/vscode-gitlens.git</projectSourceUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/vscode-gitlens</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/d2504b05cd9acc53d93c382c1727985004da4141/icons/vscode-gitlens.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@d2504b05cd9acc53d93c382c1727985004da4141/icons/vscode-gitlens.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/eamodio.gitlens/license</licenseUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens</docsUrl>
     <bugTrackerUrl>https://github.com/eamodio/vscode-gitlens/issues</bugTrackerUrl>
