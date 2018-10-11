@@ -4,13 +4,13 @@
   <metadata>
     <id>gulp-cli</id>
     <title>Command line interface for gulp</title>
-    <version>2.0.1</version>
+    <version>2.0.1.20181011</version>
     <authors>Fractal</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://github.com/gulpjs/gulp-cli</projectUrl>
     <projectSourceUrl>https://github.com/gulpjs/gulp-cli</projectSourceUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/gulp-cli</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/d632188d69029ca9ac53b8322de3f2641be1e59e/icons/gulp-cli.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@d632188d69029ca9ac53b8322de3f2641be1e59e/icons/gulp-cli.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <docsUrl>https://github.com/gulpjs/gulp-cli/tree/master/docs</docsUrl>
     <bugTrackerUrl>https://github.com/gulpjs/gulp-cli/issues</bugTrackerUrl>

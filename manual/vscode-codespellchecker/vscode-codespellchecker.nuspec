@@ -3,13 +3,13 @@
   <metadata>
     <id>vscode-codespellchecker</id>
     <title>Visual Studio Code Code Spell Checker Extension</title>
-    <version>1.0.0</version>
+    <version>1.0.0.20181011</version>
     <authors>Street Side Software</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker</projectUrl>
     <projectSourceUrl>https://github.com/Jason-Rev/vscode-spell-checker</projectSourceUrl>
     <packageSourceUrl>hhttps://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/vscode-codespellchecker</packageSourceUrl>
-    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/c9a4773e0e332936f0b227eb9880bfcafbb1a2a7/icons/vscode-codespellchecker.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@c9a4773e0e332936f0b227eb9880bfcafbb1a2a7/icons/vscode-codespellchecker.png</iconUrl>
     <licenseUrl>hhttps://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/license</licenseUrl>
     <docsUrl>https://github.com/Jason-Rev/vscode-spell-checker/blob/master/client/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/Jason-Rev/vscode-spell-checker/issues</bugTrackerUrl>
