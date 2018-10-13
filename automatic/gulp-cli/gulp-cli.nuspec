@@ -4,19 +4,25 @@
   <metadata>
     <id>gulp-cli</id>
     <title>Command line interface for gulp</title>
-    <version>2.0.1.20181011</version>
+    <version>2.0.1.20181013</version>
     <authors>Fractal</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://github.com/gulpjs/gulp-cli</projectUrl>
     <projectSourceUrl>https://github.com/gulpjs/gulp-cli</projectSourceUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/gulp-cli</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@d632188d69029ca9ac53b8322de3f2641be1e59e/icons/gulp-cli.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/d632188d69029ca9ac53b8322de3f2641be1e59e/icons/gulp-cli.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <docsUrl>https://github.com/gulpjs/gulp-cli/tree/master/docs</docsUrl>
     <bugTrackerUrl>https://github.com/gulpjs/gulp-cli/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>The streaming build system</summary>
-    <description></description>
+    <description><![CDATA[gulp is a toolkit that will help you automate painful or time-consuming tasks in your development workflow. For web development (if that's your thing) it can help you by doing CSS preprocessing, JS transpiling, minification, live reloading, and much more. Integrations are built into all major IDEs and people are loving gulp across PHP, .NET, Node.js, Java, and more. With over 1700 plugins (and plenty you can do without plugins), gulp lets you quit messing with build systems and get back to work.
+
+## Notes
+
+This package requires Node.js 0.10 or newer.
+You can install either the [nodejs](https://chocolatey.org/packages/nodejs) or [nodejs-lts](https://chocolatey.org/packages/nodejs-lts) package.
+]]></description>
     <releaseNotes>See https://github.com/gulpjs/gulp-cli/blob/master/CHANGELOG.md</releaseNotes>
     <tags>nodejs node javascript web build gulp</tags>
   </metadata>

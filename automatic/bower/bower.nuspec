@@ -4,19 +4,25 @@
   <metadata>
     <id>bower</id>
     <title>Bower</title>
-    <version>1.8.4.20181011</version>
+    <version>1.8.4.20181013</version>
     <authors>Twitter</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>http://bower.io/</projectUrl>
     <projectSourceUrl>https://github.com/bower/bower/</projectSourceUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/bower</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@9895f43909b7d6ff6978eda40e30e03fdcf84e29/icons/Bower.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/bbtsoftware/chocolatey-packages/9895f43909b7d6ff6978eda40e30e03fdcf84e29/icons/Bower.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <docsUrl>https://bower.io/</docsUrl>
     <bugTrackerUrl>https://github.com/bower/bower/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A package manager for the web</summary>
-    <description></description>
+    <description><![CDATA[Web sites are made of lots of things — frameworks, libraries, assets, utilities, and rainbows. Bower manages all these things for you.
+
+## Notes
+
+This package requires Node.js 0.10 or newer.
+You can install either the [nodejs](https://chocolatey.org/packages/nodejs) or [nodejs-lts](https://chocolatey.org/packages/nodejs-lts) package.
+]]></description>
     <releaseNotes>See https://github.com/bower/bower/blob/master/CHANGELOG.md</releaseNotes>
     <tags>nodejs node npm javascript web packages bower</tags>
   </metadata>
