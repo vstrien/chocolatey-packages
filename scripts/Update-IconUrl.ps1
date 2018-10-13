@@ -5,7 +5,7 @@
 .DESCRIPTION
   Searches for icons matching the package name and
   extracts the latest commit hash for that icon (committing it first if it has changed).
-  It then updates the package nuspec file with the correct rawgit url.
+  It then updates the package nuspec file with the correct jsdelivr url.
 
 .PARAMETER Name
   If specified it only updates the package matching the specified name
@@ -15,7 +15,7 @@
   Is ignored if no Name parameter is specified.
 
 .PARAMETER GithubRepository
-  The github user/repository to use in the rawgit url
+  The github user/repository to use in the jsdelivr url
 
 .PARAMETER RelativeIconDir
   The relative path to where icons are located (relative to the location of this script)
@@ -51,20 +51,14 @@
 .EXAMPLE
   ps> .\Update-IconUrl.ps1
   Updates all nuspec files with matching icons
--    <iconUrl>https://cdn.rawgit.com/AdmiringWorm/chocolatey-packages/e4a49519947c3cff55c17a0b08266c56b0613e64/icons/thunderbird.png</iconUrl>
-+    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/edba4a5849ff756e767cba86641bea97ff5721fe/icons/thunderbird.png</iconUrl>
 
 .EXAMPLE
   ps> .\Update-IconUrl.ps1 -Name 'SQLite'
   Updates only a single nuspec file with the specified name with its matching icon
--    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/e4a49519947c3cff55c17a0b08266c56b0613e64/icons/speccy.png</iconUrl>
-+    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/edba4a5849ff756e767cba86641bea97ff5721fe/icons/speccy.png</iconUrl>
 
 .EXAMPLE
   ps> .\Updates-IconUrl.ps1 -Name 'youtube-dl' -IconName 'y-dl'
   Updates only a single nuspec file with the specified name with the icon matching the specified IconName
--    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/e4a49519947c3cff55c17a0b08266c56b0613e64/icons/y-dl.svg</iconUrl>
-+    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/a42da86c9cc480a5f3f23677e0d73d88416a3b3c/icons/y-dl.svg</iconUrl>
 
 .EXAMPLE
   ps> .\Updates-IconUrl.ps1 -Name "thunderbird" -UseStopwatch
@@ -163,18 +157,18 @@ function Optimize-Image {
   $extension = [System.IO.Path]::GetExtension($iconPath)
   $fileName  = [System.IO.Path]::GetFileName($iconPath)
 
-  $supportedOptimizers | ? {
+  $supportedOptimizers | Where-Object {
     $name = if ($_.ExeName) { $_.ExeName } else { $_.DisplayName }
     return $_.Extensions.Contains($extension) -and (Get-Command $name -ea 0)
-  } | % {
+  } | ForEach-Object {
     Write-Host "Optimizing the icon $fileName using $($_.DisplayName)"
-    $originalSize = Get-Item $iconPath | % Length
+    $originalSize = Get-Item $iconPath | ForEach-Object Length
     $name = if ($_.ExeName) { $_.ExeName } else { $_.DisplayName }
     $path = Get-Command $name
     do {
-      $sizeBefore = Get-Item $iconPath | % Length
+      $sizeBefore = Get-Item $iconPath | ForEach-Object Length
       Start-Process -FilePath $path -ArgumentList $_.Arguments -Wait -NoNewWindow
-      $sizeAfter = Get-Item $iconPath | % Length
+      $sizeAfter = Get-Item $iconPath | ForEach-Object Length
     } while ($sizeAfter -lt $sizeBefore)
 
     if ($sizeAfter -lt $originalSize) {
@@ -236,11 +230,11 @@ function Replace-IconUrl{
     [string]$GithubRepository
   )
 
-  $nuspec = gc "$NuspecPath" -Encoding UTF8
+  $nuspec = Get-Content "$NuspecPath" -Encoding UTF8
 
   $oldContent = ($nuspec | Out-String) -replace '\r\n?',"`n"
 
-  $url = "https://cdn.rawgit.com/$GithubRepository/$CommitHash/$iconPath"
+  $url = "https://cdn.jsdelivr.net/gh/$GithubRepository@$CommitHash/$iconPath"
 
   $nuspec = $nuspec -replace '<iconUrl>.*',"<iconUrl>$url</iconUrl>"
 
@@ -270,23 +264,23 @@ function Update-IconUrl{
 
   $validSuffixes = @(".install"; ".portable"; ".commandline")
 
-  $suffixMatch = $validSuffixes | ? { $Name.EndsWith($_) } | select -first 1
+  $suffixMatch = $validSuffixes | Where-Object { $Name.EndsWith($_) } | Select-Object -first 1
 
   if ($suffixMatch) {
     $possibleNames += $Name.Substring(0, $Name.Length - $suffixMatch.Length)
   }
 
   # Let check if the package already contains a url, and get the filename from that
-  $content = gc "$PSScriptRoot/$PackagesDirectory/$Name/$Name.nuspec" -Encoding UTF8
+  $content = Get-Content "$PSScriptRoot/$PackagesDirectory/$Name/$Name.nuspec" -Encoding UTF8
 
-  if ($content | ? { $_ -match 'Icon(Url)?:\s*Skip( check)?' }) {
+  if ($content | Where-Object { $_ -match 'Icon(Url)?:\s*Skip( check)?' }) {
     if (!($Quiet)) {
       Write-Warning "Skipping icon check for $Name"
     }
     return;
   }
 
-  $content | ? { $_ -match "\<iconUrl\>(.+)\<\/iconUrl\>" } | Out-Null
+  $content | Where-Object { $_ -match "\<iconUrl\>(.+)\<\/iconUrl\>" } | Out-Null
   if ($Matches) {
     $url = $Matches[1]
     $index = $url.LastIndexOf('/')
