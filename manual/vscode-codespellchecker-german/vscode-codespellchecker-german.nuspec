@@ -10,7 +10,7 @@
     <projectSourceUrl>https://github.com/Jason3S/vscode-cspell-dict-extensions</projectSourceUrl>
     <packageSourceUrl>hhttps://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/vscode-codespellchecker-german</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@549e229bcc6827f28fbc9f18fbd3b9ff3db607d7/icons/vscode-codespellchecker-german.png</iconUrl>
-    <licenseUrl>hhttps://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/license</licenseUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker-german/license</licenseUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-german</docsUrl>
     <bugTrackerUrl>https://github.com/Jason3S/vscode-cspell-dict-extensions/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
