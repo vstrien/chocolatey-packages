@@ -4,7 +4,7 @@
   <metadata>
     <id>markdownlint-cli</id>
     <title>MarkdownLint Command Line Interface</title>
-    <version>0.8.1.20181011</version>
+    <version>0.13.0</version>
     <authors>Igor Shubovych</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://github.com/igorshubovych/markdownlint-cli</projectUrl>
@@ -15,7 +15,13 @@
     <bugTrackerUrl>https://github.com/igorshubovych/markdownlint-cli/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>MarkdownLint command line interface</summary>
-    <description></description>
+    <description><![CDATA[A command line interface for MarkdownLint.
+
+## Notes
+
+This package requires Node.js 0.12 or newer.
+You can install either the [nodejs](https://chocolatey.org/packages/nodejs) or [nodejs-lts](https://chocolatey.org/packages/nodejs-lts) package.
+]]></description>
     <releaseNotes>See https://github.com/igorshubovych/markdownlint-cli/releases</releaseNotes>
     <tags>nodejs node markdown linting markdownlint</tags>
   </metadata>
