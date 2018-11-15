@@ -10,6 +10,7 @@
     <projectUrl>https://github.com/igorshubovych/markdownlint-cli</projectUrl>
     <projectSourceUrl>https://github.com/igorshubovych/markdownlint-cli</projectSourceUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/markdownlint-cli</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@cd2b7bdda20dec554eeb792e0ad7bfa76e5c4900/icons/markdownlint-cli.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <docsUrl>https://github.com/igorshubovych/markdownlint-cli/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/igorshubovych/markdownlint-cli/issues</bugTrackerUrl>
