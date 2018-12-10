@@ -1,6 +1,6 @@
 ﻿$packageArgs = @{
     packageName   = $env:ChocolateyPackageName
-    softwareName  = 'Microsoft .NET Framework  (DEU)*'
+    softwareName  = 'Microsoft .NET Framework (DEU)*'
     fileType      = 'exe'
     silentArgs    = "/q /norestart /log ""${Env:TEMP}\${packageName}.log"""
     validExitCodes = @(
