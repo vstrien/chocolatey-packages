@@ -23,7 +23,7 @@
 This package requires Node.js 0.10 or newer.
 You can install either the [nodejs](https://chocolatey.org/packages/nodejs) or [nodejs-lts](https://chocolatey.org/packages/nodejs-lts) package.
 ]]></description>
-    <releaseNotes>See https://github.com/gulpjs/gulp-cli/blob/master/CHANGELOG.md</releaseNotes>
+    <releaseNotes>See https://github.com/gulpjs/gulp-cli/releases</releaseNotes>
     <tags>nodejs node javascript web build gulp</tags>
   </metadata>
   <files>
