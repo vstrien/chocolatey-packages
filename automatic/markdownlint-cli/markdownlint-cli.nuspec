@@ -4,7 +4,7 @@
   <metadata>
     <id>markdownlint-cli</id>
     <title>MarkdownLint Command Line Interface</title>
-    <version>0.15.0</version>
+    <version>0.16.0</version>
     <authors>Igor Shubovych</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://github.com/igorshubovych/markdownlint-cli</projectUrl>
