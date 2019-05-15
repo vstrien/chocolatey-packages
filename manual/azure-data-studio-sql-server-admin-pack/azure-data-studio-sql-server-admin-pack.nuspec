@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>azure-data-studio-sql-server-admin-pack</id>
+    <title>Admin Pack for SQL Server</title>
+    <version>0.0.1</version>
+    <authors>Microsoft</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://docs.microsoft.com/en-us/sql/azure-data-studio/what-is?view=sql-server-2017</projectUrl>
+    <projectSourceUrl>https://github.com/Microsoft/azuredatastudio/tree/master/extensions/admin-pack</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/azure-data-studio-sql-server-admin-pack</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@b57fafea0019b1a9d21dd34decaaf94c7b505c8f/icons/azure-data-studio-sql-server-admin-pack.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/Microsoft/azuredatastudio/master/LICENSE.txt</licenseUrl>
+    <docsUrl>https://github.com/microsoft/azuredatastudio/blob/master/extensions/admin-pack/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/microsoft/azuredatastudio/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Admin Pack for SQL Server for Azure Data Studio</summary>
+    <description>
+Admin Pack for SQL Server is a collection of popular database administration extensions to help you manage SQL Server. 
+</description>
+    <tags>microsoft extension sql-server sql azure-data-studio azure admin-pack</tags>
+    <releaseNotes>https://github.com/Microsoft/azuredatastudio/releases</releaseNotes>
+    <dependencies>
+      <dependency id="azure-data-studio" version="1.6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
