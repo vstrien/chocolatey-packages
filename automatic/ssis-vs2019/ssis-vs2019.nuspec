@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ssis-vs2019</id>
+    <title>Microsoft SQL Server Integration Services Projects</title>
+    <version>0.0</version>
+    <authors>Microsoft</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects</projectUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/ssis-vs2019</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@7907b4d6210796a4ae3900e0d45c3be7e97f4f53/icons/ssis-vs2019.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>This project may be used for building high performance data integration and workflow solutions, including extraction, transformation, and loading (ETL) operations for data warehousing.</summary>
+    <description>
+This project may be used for building high performance data integration and workflow solutions, including extraction, transformation, and loading (ETL) operations for data warehousing.
+
+Visit https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS for the latest information, tips, news, and announcements about SSIS directly from the product team.
+    </description>
+    <tags>microsoft integration integration-services sql ssis ssis-vs2019 ssdt sql-server data-tools</tags>
+    <dependencies />
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>  
+</package>
