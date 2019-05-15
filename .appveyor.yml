@@ -39,6 +39,9 @@ environment:
   # Optional, leave empty to create anonymous gist
   gist_id: b601bc1e0835054f4df23310100983ee
 
+  #ID of the gist used to save test run results
+  gist_id_test: c72aa859cc786592b658a439f10fb5fc
+
   # Chocolatey API key - to push updated packages
   api_key:
     secure: NBStnaE0XMa51x4JrQc9Witu99VSS7WHPE0NkYums1X5XCGx1Tlavz7xAMWRcM+P # https://ci.appveyor.com/tools/encrypt
