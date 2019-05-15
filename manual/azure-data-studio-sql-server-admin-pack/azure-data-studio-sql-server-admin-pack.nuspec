@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>azure-data-studio-sql-server-admin-pack</id>
-    <title>Admin Pack for SQL Server</title>
+    <title>Azure Data Studio Admin Pack for SQL Server</title>
     <version>0.0.1</version>
     <authors>Microsoft</authors>
     <owners>BBT Software AG</owners>
