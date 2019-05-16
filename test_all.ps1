@@ -80,10 +80,11 @@ $options = [ordered]@{
   [System.Net.SecurityProtocolType]::Tls -bor
   [System.Net.SecurityProtocolType]::Ssl3
 
-$global:info = updateall -Name $Name -Options $Options
+$global:info = Update-AuPackages -Name $Name -Options $Options
 
 $au_errors = $global:info | Where-Object { $_.Error } | Select-Object -ExpandProperty Error
 
 if ($ThrowOnErrors -and $au_errors.Count -gt 0) {
+    WriteOutput "Test failed with message: $au_errors" -type Error
     throw 'Errors during update'
 }
