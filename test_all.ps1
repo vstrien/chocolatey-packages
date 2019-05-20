@@ -22,6 +22,7 @@ if (($Name.Length -gt 0) -and ($Name[0] -match '^random (.+)')) {
 $options = [ordered]@{
     Force   = $true
     Push    = $false
+    UpdateTimeout = 3600                               #Update timeout in seconds
     Threads = 10
 
     IgnoreOn = @(                                      #Error message parts to set the package ignore status
