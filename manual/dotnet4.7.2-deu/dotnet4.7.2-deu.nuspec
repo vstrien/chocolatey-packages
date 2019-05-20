@@ -20,4 +20,7 @@ You can install multiple language packs on one computer, each for a different la
       <dependency id="dotnetfx" version="4.7.2.20180712" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
