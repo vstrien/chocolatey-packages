@@ -104,6 +104,7 @@ jobs:
     env:
       api_key: $(api_key)
       github_api_key: $(github_api_key)
+    continueOnError: true
     displayName: 'Run build'
   - powershell: |
       if (Test-Path $Env:TEMP\chocolatey\au) { 7z a  -mx9 au_temp.7z $Env:TEMP\chocolatey\au\* }
@@ -117,9 +118,11 @@ jobs:
         'eventlogs.txt'
       )
       $paths | ? { Test-Path $_ } | % { Copy-Item "$_" -Destination "$env:BUILD_ARTIFACTSTAGINGDIRECTORY" }
+    condition: succeededOrFailed()
     displayName: 'Collecting build artifacts'
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)'
       artifactName: 'drop'
+    condition: succeededOrFailed()
     displayName: 'Publishing build artifacts'
