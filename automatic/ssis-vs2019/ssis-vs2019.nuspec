@@ -3,7 +3,7 @@
   <metadata>
     <id>ssis-vs2019</id>
     <title>Microsoft SQL Server Integration Services Projects</title>
-    <version>0.0</version>
+    <version>3.0</version>
     <authors>Microsoft</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects</projectUrl>
@@ -11,11 +11,21 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@74b0a3c4fe3e5ad5b896dd63f99a4edb346f8e21/icons/ssis-vs2019.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>This project may be used for building high performance data integration and workflow solutions, including extraction, transformation, and loading (ETL) operations for data warehousing.</summary>
-    <description>
-This project may be used for building high performance data integration and workflow solutions, including extraction, transformation, and loading (ETL) operations for data warehousing.
+    <description><![CDATA[This project may be used for building high performance data integration and workflow solutions, including extraction, transformation, and loading (ETL) operations for data warehousing.
 
 Visit https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS for the latest information, tips, news, and announcements about SSIS directly from the product team.
-    </description>
+
+## Resources
+
+### Official Resources
+
+* [Project URL](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects)
+* [SSDT for Visual Studio](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt)
+
+### Interesting websites & blog posts
+
+* [Information, tips, news, and announcements about SSIS](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS)
+]]></description>
     <tags>microsoft integration integration-services sql ssis ssis-vs2019 ssdt sql-server data-tools</tags>
     <dependencies />
   </metadata>
