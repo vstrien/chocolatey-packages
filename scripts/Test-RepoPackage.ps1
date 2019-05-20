@@ -327,12 +327,19 @@ function SetAppveyorExitCode() {
   )
   WriteOutput "Exit code was $ExitCode" -type Warning
 
-  if (!(Test-Path env:\APPVEYOR)) {
+  if ($ExitCode -eq 0) {
     return
   }
-  if ($ExitCode -ne 0) {
+
+  if ((Test-Path env:\APPVEYOR)) {
     $host.SetShouldExit($ExitCode)
   }
+
+  if ((Test-Path env:\TF_BUILD)) {
+    $host.SetShouldExit($ExitCode)
+  }
+
+  return
 }
 
 function RunChocoProcess() {
