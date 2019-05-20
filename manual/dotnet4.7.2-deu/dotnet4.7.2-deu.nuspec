@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>dotnet4.7.2-deu</id>
+    <title>Microsoft .NET Framework 4.7.2 German Language Pack</title>
+    <version>4.7.3062.0</version>
+    <authors>Microsoft</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://www.microsoft.com/de-DE/download/details.aspx?id=53323</projectUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/dotnet4.7.2-deu</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@eca9d801fec67aa11df1af98be470d9ab601c5cf/icons/dotnet.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>The .NET Framework 4.7.2 Language Pack contains localized resources for supported languages.</summary>
+    <description>
+The .NET Framework 4.7.2 Language Pack contains translated error messages and other UI text for languages other than English.
+You can install multiple language packs on one computer, each for a different language.
+    </description>
+    <tags>microsoft .net .net-framework-4.7.2 language-pack admin</tags>
+    <dependencies>
+      <dependency id="dotnetfx" version="4.7.2.20180712" />
+    </dependencies>
+  </metadata>
+</package>
