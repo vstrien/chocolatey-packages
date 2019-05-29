@@ -22,9 +22,6 @@ $packageArgs = @{
     url           = "https://download.microsoft.com/download/b/9/5/b95136c0-58a0-48df-821a-d05319a86852/enu_NETFX/amd64_ndp472-kb4054530-x86-x64-allos-deu_exe/ndp472-kb4054530-x86-x64-allos-deu.exe"
     checksum      = '4A8EFFB5E202B937755F04A963F5B2EF9A53818DA84247250CA9F468FBD99244'
     checksumType  = 'sha256'
-    url64bit      = ""
-    checksum64    = ''
-    checksumType64= 'sha256'
   }
 
 Install-ChocolateyPackage @packageArgs
