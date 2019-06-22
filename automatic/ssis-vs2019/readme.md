@@ -4,13 +4,11 @@ This project may be used for building high performance data integration and work
 
 Visit https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS for the latest information, tips, news, and announcements about SSIS directly from the product team.
 
-## Resources
+## Notes
 
-### Official Resources
+This package has the following additional requirements:
 
-* [Project URL](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects)
-* [SSDT for Visual Studio](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt)
-
-### Interesting websites & blog posts
-
-* [Information, tips, news, and announcements about SSIS](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS)
+* Visual Studio core editor
+* SQL Server Data Tools
+* .NET Framework 4 targeting pack
+* .NET Framework 4.5 targeting pack
