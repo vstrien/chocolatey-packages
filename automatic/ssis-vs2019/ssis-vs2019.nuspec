@@ -3,7 +3,7 @@
   <metadata>
     <id>ssis-vs2019</id>
     <title>Microsoft SQL Server Integration Services Projects</title>
-    <version>3.0</version>
+    <version>3.0.0.20190622</version>
     <authors>Microsoft</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects</projectUrl>
@@ -16,18 +16,20 @@
 
 Visit https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS for the latest information, tips, news, and announcements about SSIS directly from the product team.
 
-## Notes
+## Resources
 
-This package has the following additional requirements:
+### Official Resources
 
-* Visual Studio core editor
-* SQL Server Data Tools
-* .NET Framework 4 targeting pack
-* .NET Framework 4.5 targeting pack
+* [Project URL](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects)
+* [SSDT for Visual Studio](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt)
+
+### Interesting websites & blog posts
+
+* [Information, tips, news, and announcements about SSIS](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS)
 ]]></description>
     <tags>microsoft integration integration-services sql ssis ssis-vs2019 ssdt sql-server data-tools</tags>
     <dependencies>
-      <dependency id="DotNet4.6-TargetPack"/>
+      <dependency id="DotNet4.6-TargetPack" />
     </dependencies>
   </metadata>
   <files>
