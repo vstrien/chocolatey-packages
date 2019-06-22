@@ -25,9 +25,20 @@ Visit https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-
 ### Interesting websites & blog posts
 
 * [Information, tips, news, and announcements about SSIS](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS)
+
+## Notes
+
+This package has the following additional requirements:
+
+* Visual Studio core editor
+* SQL Server Data Tools
+* .NET Framework 4 targeting pack
+* .NET Framework 4.5 targeting pack
 ]]></description>
     <tags>microsoft integration integration-services sql ssis ssis-vs2019 ssdt sql-server data-tools</tags>
-    <dependencies />
+    <dependencies>
+      <dependency id="DotNet4.6-TargetPack"/>
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
